@@ -1,38 +1,162 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+.all {
+  min-height: 100vh;
+  background-color: crimson;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content {
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.allPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(142, 95, 185);
+}
+
+.allPageChildes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  /* display: inline-table;
+  display: inline-flex; */
+  margin: 20px 0px;
+  border-radius: 10px;
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.allPageChildImages {
+  width: 100%;
+}
+
+.contentButton {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.showMoreButton {
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.nothing {
+  width: 0px;
+  height: 0px;
+}
+
+.allPageChildesButton {
+  text-align: center;
+  height: 30px;
+  width: 10%;
+}
+
+.categorys {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: chartreuse;
+  width: 14%;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 100px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.categorysCilds {
+  display: block;
+  list-style-type: none;
+  cursor: pointer;
+  color: rgb(93, 93, 165);
+  background-color: rgb(237, 245, 237);
+  width: 70%;
+  height: 5%;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.categorys_cilds:hover {
+  background-color: rgb(93, 93, 165);
+  color: rgb(237, 245, 237);
+}
+
+@media only screen and (max-width: 1240px) {
+  .allPageChildes {
+    width: 32%;
+  }
+
+  .allPageChildImages {
+    /* height: 150px; */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 900px) {
+  .allPageChildes {
+    width: 30%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .allPageChildes {
+    width: 48%;
+  }
+
+  .allPageChildImages {
+    width: 98%;
+    height: 220px;
+  }
+
+  .categorysCilds {
+    width: 98%;
+    font-size: 13px;
+  }
+
+  /* .allPageChildImages {
+    height: 100px;
+  } */
+}
+
+@media only screen and (max-width: 650px) {
+  .allPage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .allPageChildes {
+    width: 90%;
+  }
+
+  .allPageChildImages {
+    width: 98%;
+    height: 320px;
+  }
+
+  .categorysCilds {
+    width: 98%;
+    font-size: 13px;
   }
 }
